@@ -1,0 +1,81 @@
+/* 
+============ global ============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red;*/
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.block {
+  display: block
+}
+
+/* 
+============ typography ============
+*/
+
+body {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.small-font {
+  font-size: .6rem;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letter-spacing {
+  letter-spacing: 2px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.splash-header-social-media-link-container,
+.splash-header-section-two {
+  color: white;
+}
+
+/* 
+============ splash-container ============
+*/
+
+.splash-container {
+  background-image: url(./img/home-backgounrd.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(200, 200, 200);
+  background-blend-mode: multiply;
+}
+
+.splash-header-social-media-link-container {
+  display: none;
+}
