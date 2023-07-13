@@ -6,8 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red;*/
-  /* font-family: 'Roboto', sans-serif; */
+  /* border: 1px solid red; */
 }
 
 li {
@@ -30,13 +29,39 @@ a {
   display: block
 }
 
+.mobile-contact-banner {
+  background-color: white;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+
+.mobile-banner-button {
+  color: black;
+  border: 2px solid #c3901b;
+  border-radius: 3px;
+  padding: 1rem 1.75rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: .5s;
+}
+
+.mobile-banner-button:hover,
+.mobile-banner-button:focus {
+  color: white;
+  background-color: #c3901b;
+}
+
 /* 
 ============ typography ============
 */
 
 body {
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   font-size: 1rem;
+  line-height: 1;
 }
 
 .small-font {
@@ -59,9 +84,30 @@ body {
   text-decoration: underline;
 }
 
-.splash-header-social-media-link-container,
-.splash-header-section-two {
+.splash-content-container {
   color: white;
+}
+
+.nav-links {
+  color: white;
+  opacity: .7;
+  transition: .15s;
+}
+
+.nav-links:hover,
+.nav-links:focus {
+  opacity: 1;
+}
+
+.current {
+  pointer-events: none;
+  opacity: 1;
+}
+
+.splash-body-sub-title {
+  font-weight: 400;
+  font-family: serif;
+  opacity: .9;
 }
 
 /* 
@@ -72,10 +118,70 @@ body {
   background-image: url(./img/home-backgounrd.jpg);
   background-size: cover;
   background-position: center;
-  background-color: rgb(200, 200, 200);
+  background-color: #c0c0c0;
   background-blend-mode: multiply;
+}
+
+.splash-content-container {
+  flex-direction: column;
+  align-items: center;
 }
 
 .splash-header-social-media-link-container {
   display: none;
+}
+
+.splash-header-section-two {
+  background-color: black;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  padding-block: 2.5rem;
+}
+.nav-link-container {
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-inline: auto;
+  max-width: 50em;
+  margin-top: 2rem;
+  padding-inline: 3rem;
+}
+
+.splash-body-container {
+  margin-block: 6rem;
+  padding-block: 2.5rem;
+  text-align: center;
+  width: 95%;
+  max-width: 25rem;
+  border: 10px solid white;
+}
+
+.splash-body-title {
+  margin-bottom: .5rem;
+}
+
+/* 
+============ media queries ============
+*/
+
+@media (min-width: 400px) {
+
+  .splash-header-section-two {
+    padding-block: 1rem;
+  }
+
+  .nav-link-container {
+    flex-direction: row;
+    margin-top: .5rem;
+  }
+
+}
+
+@media (min-width: 600px) {
+
+  .mobile-contact-banner {
+    display: none;
+  }
+
 }
