@@ -33,15 +33,21 @@ a {
   background-color: aliceblue;
   width: 100%;
   justify-content: space-evenly;
-  gap: 1rem;
   padding-block: 1rem;
+}
+
+.banner-legend {
+  padding: 1rem;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 0;
 }
 
 .mobile-banner-button {
   color: black;
   border: 2px solid #c3901b;
   border-radius: 3px;
-  padding: 1rem 1.75rem;
+  padding: .75rem 2rem;
   font-size: 1.1rem;
   font-weight: 500;
   transition: .5s;
@@ -59,7 +65,6 @@ a {
 
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
   font-size: 1rem;
   line-height: 1;
 }
@@ -102,6 +107,7 @@ body {
 .current {
   pointer-events: none;
   opacity: 1;
+  border-bottom: 3px solid white;
 }
 
 .splash-body-sub-title {
@@ -111,7 +117,7 @@ body {
 }
 
 /* 
-============ splash-container ============
+============ splash container ============
 */
 
 .splash-container {
@@ -159,6 +165,12 @@ body {
   text-align: center;
   padding-block: 2.5rem;
 }
+
+.splash-header-section-two-title {
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-link-container {
   flex-direction: column;
   justify-content: space-around;
@@ -170,7 +182,7 @@ body {
 }
 
 .splash-body-container {
-  margin-block: 12rem;
+  margin-block: 6rem;
   padding-block: 2.5rem;
   text-align: center;
   width: 95%;
@@ -180,6 +192,45 @@ body {
 
 .splash-body-title {
   margin-bottom: .5rem;
+}
+
+/* 
+============ section one ============
+*/
+
+.main-container {
+  background-color: aliceblue;
+}
+
+.section-one {
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  max-width: 70em;
+  margin-inline: auto;
+}
+
+.section-one-title {
+  font-weight: 500;
+}
+
+.article-container {
+  margin-block: 2rem;
+}
+
+.article-title {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.article-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-link {
+  display: block;
+  margin-top: .5rem;
+  color: #c3901b
 }
 
 /* 
@@ -205,9 +256,15 @@ body {
     display: none;
   }
 
+  .articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
 }
 
-@media (min-width: 1065px) {
+@media (min-width: 950px) {
 
   .splash-header-social-media-link-container {
     display: flex;
@@ -227,7 +284,7 @@ body {
 
   .splash-header-section-two-title {
     margin-left: 1.5em;
-    opacity: .8;
+    opacity: 1;
   }
 
   .nav-link-container {
@@ -240,8 +297,13 @@ body {
     font-weight: 500;
   }
 
+  .current {
+    border-bottom: 3px solid black;
+  }
+
   .splash-body-container {
     padding-block: 4rem;
+    margin-block: 12rem;
     max-width: 40rem;
     border: 15px solid aliceblue;
   }
