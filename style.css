@@ -170,7 +170,7 @@ body {
 }
 
 .splash-body-container {
-  margin-block: 6rem;
+  margin-block: 12rem;
   padding-block: 2.5rem;
   text-align: center;
   width: 95%;
@@ -242,7 +242,6 @@ body {
 
   .splash-body-container {
     padding-block: 4rem;
-    margin-block: 12rem;
     max-width: 40rem;
     border: 15px solid aliceblue;
   }
