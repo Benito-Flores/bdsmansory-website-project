@@ -37,6 +37,9 @@ a {
 }
 
 .banner-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
   font-size: 4rem;
   font-weight: 900;
@@ -59,6 +62,12 @@ a {
   background-color: #c3901b;
 }
 
+.icon-tabler-trowel {
+  color: #c3901b;
+  transform: rotate(45deg);
+  display: block;
+}
+
 /* 
 ============ typography ============
 */
@@ -76,6 +85,7 @@ h3 {
 
 .small-font {
   font-size: .6rem;
+  opacity: .8;
 }
 
 .capitalize {
@@ -120,7 +130,7 @@ h3 {
   font-weight: 400;
   font-family: serif;
   opacity: .9;
-  margin-bottom: .5rem;
+  margin-bottom: 2rem;
 }
 
 /* 
@@ -128,7 +138,7 @@ h3 {
 */
 
 .splash-container {
-  background-image: url(./img/home-backgounrd.jpg);
+  background-image: url(./img/home-background.jpg);
   background-size: cover;
   background-position: center;
   background-color: #a0a0a0;
@@ -190,11 +200,11 @@ h3 {
 }
 
 .splash-body-container {
-  margin-block: 10rem;
-  padding-block: 2.5rem;
+  margin-block: 9rem;
+  padding: 2.5rem;
   text-align: center;
   width: 95%;
-  max-width: 25rem;
+  max-width: 50rem;
   border: 10px solid aliceblue;
 }
 
@@ -288,6 +298,42 @@ img {
 }
 
 /* 
+============ section three ============
+*/
+
+.section-three {
+  background-image: url(./img/concrete-background.webp);
+  background-blend-mode: multiply;
+  text-align: center;
+  padding: 2rem 1rem;
+}  
+
+.section-three-title {
+  font-weight: 500;
+}
+
+.project-image-container {
+  margin-top: 2rem;
+  max-width: 40em;
+  margin-inline: auto;
+}
+
+.project-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-three-content {
+  max-width: 70em;
+  margin-inline: auto;
+}
+
+.project-info {
+  max-width: 45em;
+  margin: 1rem auto;
+}
+
+/* 
 ============ media queries ============
 */
 
@@ -361,7 +407,7 @@ img {
     padding-block: 1.5rem;
   }
 
-  .splash-header-section-two-title {
+  .splash-header-title-container {
     margin-left: 1.5em;
     opacity: 1;
   }
@@ -382,17 +428,7 @@ img {
 
   .splash-body-container {
     padding-block: 4rem;
-    margin-block: 12rem;
-    max-width: 40rem;
     border: 15px solid aliceblue;
-  }
-
-  .splash-body-title {
-    font-size: 2.5rem;
-  }
-
-  .splash-body-sub-title {
-    font-size: 1.75rem;
   }
 
 }
