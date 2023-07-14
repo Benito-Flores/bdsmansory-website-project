@@ -119,6 +119,7 @@ h3 {
   font-weight: 400;
   font-family: serif;
   opacity: .9;
+  margin-bottom: .5rem;
 }
 
 /* 
@@ -154,6 +155,7 @@ h3 {
 }
 
 .header-social-links {
+  display: flex;
   color: white;
   opacity: .9;
 }
@@ -209,7 +211,7 @@ h3 {
 
 .section-one {
   text-align: center;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 0rem 1rem;
   max-width: 70em;
   margin-inline: auto;
 }
@@ -350,7 +352,6 @@ img {
   .splash-header-section-two {
     background-color: aliceblue;
     color: black;
-    border-radius: 4px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
