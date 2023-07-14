@@ -38,8 +38,10 @@ a {
 
 .banner-legend {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: .1rem;
   padding: 1rem;
   font-size: 4rem;
   font-weight: 900;
@@ -130,7 +132,7 @@ h3 {
   font-weight: 400;
   font-family: serif;
   opacity: .9;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* 
@@ -405,6 +407,10 @@ img {
     width: 80%;
     max-width: 70em;
     padding-block: 1.5rem;
+  }
+  
+  .splash-body-sub-title {
+    margin-bottom: 2rem;
   }
 
   .splash-header-title-container {
