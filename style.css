@@ -320,11 +320,16 @@ h3 {
     gap: 3em;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
   }
 
   .about-us-content-container {
     max-width: 50%;
     margin-inline: auto;
+  }
+
+  .about-us-title {
+    margin-block: 2rem;
   }
 
 }
